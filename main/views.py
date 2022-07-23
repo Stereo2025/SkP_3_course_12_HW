@@ -1,7 +1,8 @@
 import logging
 from json import JSONDecodeError
 from flask import render_template, Blueprint, request
-from functions import find_post, POST_PATH
+from global_variables import POST_PATH
+from functions import find_post
 
 
 main_blueprint = Blueprint('main_blueprint', __name__, template_folder='templates')
