@@ -1,8 +1,8 @@
 import logging
 from json import JSONDecodeError
 from flask import render_template, Blueprint, request
-from functions import add_post, save_picture, POST_PATH
-from global_variables import EXTENSIONS
+from functions import add_post, save_picture
+from global_variables import EXTENSIONS, POST_PATH
 
 loader_blueprint = Blueprint('loader_blueprint', __name__, template_folder='templates')
 
