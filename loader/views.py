@@ -33,7 +33,7 @@ def add_post_page():
                f"Вы загрузили файл расширения: {picture.filename.split('.')[-1]}'" \
                f"<strong>Возможно загрузить только {EXTENSIONS} файлы</strong>"
 
-    filename = save_picture(picture)
+    filename = save_picture(picture)[1:]
     post_to_add = {'pic': filename, 'content': content}
 
     logging.info(f'Новый пост в {POST_PATH} добавлен')

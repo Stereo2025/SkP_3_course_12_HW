@@ -6,7 +6,7 @@ def load_json() -> list[dict]:
 
     """Загружает посты из posts.json"""
 
-    with open('posts.json', 'r', encoding='utf-8') as file:
+    with open(POST_PATH, 'r', encoding='utf-8') as file:
         return json.load(file)
 
 

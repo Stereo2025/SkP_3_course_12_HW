@@ -37,5 +37,5 @@ def show_page():
         logging.error(f'Файл {POST_PATH} не найден.')
         return f'Файл {POST_PATH} не найден.'
 
-    return render_template("post_list.html", looking_post=looking_post, some_query=some_query)
+    return render_template("post_list.html", some_query=some_query, looking_post=looking_post)
 #######################################################################################
